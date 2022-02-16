@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ReviewTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQT-D0-QUi">
+                                <rect key="frame" x="107" y="786" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6av-1Y-W4h"/>
+                                    <constraint firstAttribute="width" constant="200" id="YC5-ab-81O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="16"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="IncreaseProcess "/>
+                                <connections>
+                                    <action selector="tappedToIncrease:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I8x-u6-YTK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2l-SD-g7K">
+                                <rect key="frame" x="177" y="634" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="E02-Wr-cgy"/>
+                                    <constraint firstAttribute="width" secondItem="s2l-SD-g7K" secondAttribute="height" multiplier="1:1" id="VKE-PU-Fw2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcR-gP-hrm">
+                                <rect key="frame" x="157" y="726" width="100" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="LWj-Vx-zA2"/>
+                                    <constraint firstAttribute="width" constant="100" id="TcN-Xs-9fy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedOnReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9gG-vJ-edI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBu-OV-005">
+                                <rect key="frame" x="0.0" y="44" width="414" height="590"/>
+                                <mutableString key="text">Requesting App Store Reviews ------------------------------  1. The review prompt must not have been shown for a version of the app bundle that matches the current bundle version. This ensures that the user is not asked to review the same version of your app multiple times.
+
+2. The multistep process mentioned above must be successfully completed at least four times.  This number is arbitrary and you should choose something that fits well with how many times the user is likely to complete a process in your app.  3. Finally, the user must pause on the “Process Completed” scene for a few seconds.  This requirement limits the possibility of the prompt interrupting the user if they are about to move to a different task in your application straight away.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sBu-OV-005" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2TJ-xV-Pn2"/>
+                            <constraint firstItem="tcR-gP-hrm" firstAttribute="top" secondItem="s2l-SD-g7K" secondAttribute="bottom" constant="32" id="5PV-cS-0wf"/>
+                            <constraint firstItem="tcR-gP-hrm" firstAttribute="centerX" secondItem="VQT-D0-QUi" secondAttribute="centerX" id="5fw-sC-rqN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VQT-D0-QUi" secondAttribute="bottom" constant="32" id="LRR-HP-WnX"/>
+                            <constraint firstItem="s2l-SD-g7K" firstAttribute="centerX" secondItem="VQT-D0-QUi" secondAttribute="centerX" id="Uwb-LL-N1B"/>
+                            <constraint firstItem="s2l-SD-g7K" firstAttribute="top" secondItem="sBu-OV-005" secondAttribute="bottom" id="kBg-Lk-lJC"/>
+                            <constraint firstItem="sBu-OV-005" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mJu-Er-n51"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sBu-OV-005" secondAttribute="trailing" id="rEg-40-hJ5"/>
+                            <constraint firstItem="VQT-D0-QUi" firstAttribute="top" secondItem="tcR-gP-hrm" secondAttribute="bottom" constant="16" id="ugF-5X-Sws"/>
+                            <constraint firstItem="VQT-D0-QUi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vSF-F8-ouM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countLabel" destination="s2l-SD-g7K" id="4CX-4X-WYi"/>
+                        <outlet property="processButton" destination="VQT-D0-QUi" id="sbM-Ia-Cow"/>
+                        <outlet property="resetButton" destination="tcR-gP-hrm" id="Kud-Pc-sFk"/>
+                        <outlet property="rulesLabel" destination="sBu-OV-005" id="d4r-5s-oIw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+</document>
